@@ -1,0 +1,105 @@
+
+body{background-color: #0057b8;}
+
+.kurs{
+    margin-top: 80px;
+    height: 1190px;
+}
+.h1 {
+    cursor: default;
+    min-width: 300px;
+    width: 100%;
+    text-align: center;
+    font-size: 700%;
+    font-weight: 1000;
+    color: white;
+    white-space: nowrap;
+    padding: 0;
+    line-height: 1.2em;
+}
+.date{
+    min-width: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    padding: 0;
+    margin-bottom: 0px;
+    line-height: 1.2em;
+}
+main{
+    font-family: Helvetica, sans-serif;
+}
+table {
+    font-size: 100%;
+    scale: 125%;
+    margin: auto;
+    margin-top: 105px;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.white {
+    font-size: 300%;
+    line-height: 0.8em;
+    font-weight: 700;
+    color: red;
+    background-color: white;
+}
+.valuta {
+    margin: 0;
+    padding: 0;
+    line-height: 0.2em;
+    border: 4px;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    text-align: center;
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+}
+.contact {
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 31%;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.contact:hover {
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 100%;
+    color: white;
+    font-size: 210%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
