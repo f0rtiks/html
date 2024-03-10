@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion-kurs</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/calculate.js"></script>
+    <script src="../js/numbers.js"></script>
+    <script src="../js/private.js"></script>
+</head>
+
+<body>
+
+<div class="first">
+    <table class="topTable">
+        <tbody>
+        <tr>
+            <td>
+                <button style="background-color: #8EBAFD70" onclick="window.location.href='opt.html';">Оптовий курс</button>
+            </td>
+            <td>
+                <button style="background-color: #0069AB7C" onclick="window.location.href='bluedollar.html';">синій $$</button>
+            </td>
+            <td>
+                <button style="background-color: #cd5c5c" onclick="window.location.href='inkasacia.html';">ІНКАСАЦІЯ</button>
+            </td>
+            <td>
+                <button style="background-color: #18960070" onclick="window.location.href='pidkriplenia.html';">ПІДКРІПЛЕННЯ</button>
+            </td>
+            <td>
+                <button style="background-color: rgba(224,168,0,0.44)" onclick="window.location.href='transfer.html';">ПЕРЕМІЩЕННЯ</button>
+            </td>
+            <td>
+                <button onclick="logout()" style="background-color: rgba(255,0,0,0.44)">Вихід</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr>
+<div class="main">
+    <div class="container">
+        <div class="table-container1">
+            <table>
+                <tr>
+                    <th class="punkt" colspan="2">-- Брюховичі --</th>
+                </tr>
+                <tr>
+                    <td class="td1">UAH:</td>
+                    <td class="td2" id="UAHBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">USD:</td>
+                    <td class="td2" id="USDBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">EUR:</td>
+                    <td class="td2" id="EURBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">PLN:</td>
+                    <td class="td2" id="PLNBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">GBP:</td>
+                    <td class="td2" id="GBPBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">CZK:</td>
+                    <td class="td2" id="CZKBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">CAD:</td>
+                    <td class="td2" id="CADBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">CHF:</td>
+                    <td class="td2" id="CHFBalance"></td>
+                </tr>
+                <tr>
+                    <td class="td1">SEK:</td>
+                    <td class="td2" id="SEKBalance"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-container2">
+            <table  align="center" border="0">
+                <tbody>
+                <tr>
+                    <th  style="font-size: 32px" colspan="2">КУПІВЛЯ</th>
+                    <th></th>
+                    <th  style="font-size: 32px" colspan="2">ПРОДАЖ</th>
+                </tr>
+                <tr>
+                    <td class="white1" id="USDbuyKurs"></td>
+                    <td class="white1"><label for="buyUSD"></label><input class="input1" type="number" id="buyUSD"></td>
+                    <td class="valuta"><img src="../image/usd.gif" alt="курс долара США" title="курс долара США"></td>
+                    <td class="white2"><label for="sellUSD"></label><input class="input2" type="number" id="sellUSD"></td>
+                    <td class="white2" id="USDsellKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="EURbuyKurs"></td>
+                    <td class="white1"><label for="buyEUR"></label><input class="input1" type="number" id="buyEUR"></td>
+                    <td class="valuta"><img src="../image/eur.gif" alt="курс євро в Рівному" title="курс євро в Рівному"></td>
+                    <td class="white2"><label for="sellEUR"></label><input class="input2" type="number" id="sellEUR"></td>
+                    <td class="white2" id="EURsellKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="PLNbuyKurs"></td>
+                    <td class="white1"><label for="buyPLN"></label><input class="input1" type="number" id="buyPLN"></td>
+                    <td class="valuta"><img src="../image/pol.gif" alt="курс польська злота" title="курс польська злота"></td>
+                    <td class="white2"><label for="sellPLN"></label><input class="input2" type="number" id="sellPLN"></td>
+                    <td class="white2" id="PLNsellKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="GBPbuyKurs"></td>
+                    <td class="white1"><label for="buyGBP"></label><input class="input1" type="number" id="buyGBP"></td>
+                    <td class="valuta"><img src="../image/funt.gif" alt="курс англійський фунт" title="курс англійський фунт"></td>
+                    <td class="white2"><label for="sellGBP"></label><input class="input2" type="number" id="sellGBP"></td>
+                    <td class="white2" id="GBPsellKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="CZKbuyKurs"></td>
+                    <td class="white1"><label for="buyCZK"></label><input class="input1" type="number" id="buyCZK"></td>
+                    <td class="valuta"><img src="../image/czk.gif" alt="Чеська крона" title="Чеська крона"></td>
+                    <td class="white2"><label for="sellCZK"></label><input class="input2" type="number" id="sellCZK"></td>
+                    <td class="white2" id="CZKsellKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="CADbuyKurs"></td>
+                    <td class="white1"><label for="buyCAD"></label><input class="input1" type="number" id="buyCAD"></td>
+                    <td class="valuta"><img src="../image/knd.gif" alt="Канадський долар" title="Канадський долар"></td>
+                    <td class="white2"><label for="sellCAD"></label><input class="input2" type="number" id="sellCAD"></td>
+                    <td class="white2" id="CADsellKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="CHFbuyKurs"></td>
+                    <td class="white1"><label for="buyCHF"></label><input class="input1" type="number" id="buyCHF"></td>
+                    <td class="valuta"><img src="../image/swe.gif" alt="Швейцарський франк" title="Швейцарський франк"></td>
+                    <td class="white2"><label for="sellCHF"></label><input class="input2" type="number" id="sellCHF"></td>
+                    <td class="white2" id="CHFsellKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="SEKbuyKurs"></td>
+                    <td class="white1"><label for="buySEK"></label><input class="input1" type="number" id="buySEK"></td>
+                    <td class="valuta"><img src="../image/chf.png" alt="курс шведської крони в Рівному" title="курс шведської крони в Рівному"></td>
+                    <td class="white2"><label for="sellSEK"></label><input class="input2" type="number" id="sellSEK"></td>
+                    <td class="white2" id="SEKsellKurs"></td>
+                </tr>
+                <tr>
+                    <th colspan="2"></th>
+                    <th style="font-size: 24px">КРОС-КУРС</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <td class="white1" id="EURbuyUSDKurs"></td>
+                    <td class="white1"><label for="buyEUR_USD"></label><input class="input1" type="number" id="buyEUR_USD"></td>
+                    <td class="valuta crosskurs"><b>EUR/USD</b></td>
+                    <td class="white2"><label for="sellEUR_USD"></label><input class="input2" type="number" id="sellEUR_USD"></td>
+                    <td class="white2" id="EURsellUSDKurs"></td>
+                </tr>
+                <tr>
+                    <td class="white1" id="PLNbuyUSDKurs"></td>
+                    <td class="white1"><label for="buyPLN_USD"></label><input class="input1" type="number" id="buyPLN_USD"></td>
+                    <td class="valuta crosskurs2"><b>PLN/USD</b></td>
+                    <td class="white2"><label for="sellPLN_USD"></label><input class="input2" type="number" id="sellPLN_USD"></td>
+                    <td class="white2" id="PLNsellUSDKurs"></td>
+                </tr>
+
+                <tr>
+                    <td class="white1" id="CZKbuyUSDKurs"></td>
+                    <td class="white1"><label for="buyCZK_USD"></label><input class="input1" type="number" id="buyCZK_USD"></td>
+                    <td class="valuta crosskurs2"><b>CZK/USD</b></td>
+                    <td class="white2"><label for="sellCZK_USD"></label><input class="input2" type="number" id="sellCZK_USD"></td>
+                    <td class="white2" id="CZKsellUSDKurs"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

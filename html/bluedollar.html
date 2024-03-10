@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lion-kurs</title>
+  <link rel="stylesheet" href="../css/css.css">
+  <script src="../js/calculate.js"></script>
+  <script src="../js/numbers.js"></script>
+  <script src="../js/private.js"></script>
+</head>
+
+<body>
+
+<div class="first">
+  <table class="topTable">
+    <tbody>
+    <tr>
+      <td>
+        <button style="background-color: rgba(224,224,224,0.44)" onclick="window.location.href='main.html';">Робоча таблиця</button>
+      </td>
+      <td>
+        <button style="background-color: #8EBAFD70" onclick="window.location.href='opt.html';">Оптовий курс</button>
+      </td>
+      <td>
+        <button style="background-color: #18960070" onclick="window.location.href='pidkriplenia.html';">ПІДКРІПЛЕННЯ</button>
+      </td>
+      <td>
+        <button style="background-color: #cd5c5c" onclick="window.location.href='inkasacia.html';">ІНКАСАЦІЯ</button>
+      </td>
+      <td>
+        <button style="background-color: rgba(224,168,0,0.44)" onclick="window.location.href='transfer.html';">ПЕРЕМІЩЕННЯ</button>
+      </td>
+      <td>
+        <button onclick="logout()" style="background-color: rgba(255,0,0,0.44)">Вихід</button>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<div class="bluedollar">
+  <div class="container">
+    <div class="table-container1">
+      <div class="operation">
+        <p>СИНІЙ ДОЛЛАР</p>
+      </div>
+      <table>
+        <tr>
+          <th class="punkt">-- Брюховичі --</th>
+        </tr>
+        <tr>
+          <td class="td1">Сумма:</td>
+          <td><label for=""></label><input class="" type="number" id=""></td>
+        </tr>
+        <tr>
+          <td class="td1">Опт - Курс:</td>
+          <td><input class="" type="text" id="" step="any" inputmode="decimal" placeholder="38.70" readonly></td>
+        </tr>
+        <tr>
+          <td class="td1">Валюта:</td>
+          <td><input class="" type="text" id="" step="any" inputmode="decimal" placeholder="USD" readonly></td>
+        </tr>
+        <tr>
+          <td class="td1">Операція:</td>
+          <td>
+            <select id="">
+              <option value="покупка">Купівля</option>
+              <option value="продажа">Продаж</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <table style="margin-top: 40px">
+        <tr>
+          <th class="comm" style="text-align: left">Коментар:</th>
+        </tr>
+        <tr>
+          <td><input class="input" type="text" id=""></td>
+        </tr>
+      </table>
+      <div class="container">
+        <button class="button-24" role="button">Далі</button>
+      </div>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
